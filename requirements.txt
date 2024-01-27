@@ -1,0 +1,54 @@
+anyio==4.2.0
+    # via starlette
+attrs==23.2.0
+    # via
+    #   cattrs
+    #   jsii
+cattrs==23.2.3
+    # via jsii
+click==8.1.7
+    # via uvicorn
+constructs==10.3.0
+    # via hipaa-users-apigateway (../pyproject.toml)
+fastapi==0.109.0
+    # via hipaa-users-apigateway (../pyproject.toml)
+h11==0.14.0
+    # via uvicorn
+idna==3.6
+    # via anyio
+importlib-resources==6.1.1
+    # via jsii
+jsii==1.94.0
+    # via constructs
+mangum==0.17.0
+    # via hipaa-users-apigateway (../pyproject.toml)
+publication==0.0.3
+    # via
+    #   constructs
+    #   jsii
+pydantic==1.10.14
+    # via
+    #   fastapi
+    #   hipaa-users-apigateway (../pyproject.toml)
+python-dateutil==2.8.2
+    # via jsii
+python-dotenv==1.0.1
+    # via hipaa-users-apigateway (../pyproject.toml)
+six==1.16.0
+    # via python-dateutil
+sniffio==1.3.0
+    # via anyio
+starlette==0.35.1
+    # via fastapi
+typeguard==2.13.3
+    # via
+    #   constructs
+    #   jsii
+typing-extensions==4.9.0
+    # via
+    #   fastapi
+    #   jsii
+    #   mangum
+    #   pydantic
+uvicorn==0.27.0
+    # via hipaa-users-apigateway (../pyproject.toml)

@@ -1,0 +1,10 @@
+name: book-store
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - pip=22.0.4
+  - python=3.11.5
+  - pip:
+      - -r ../requirements-dev.txt
+      - -r ../requirements.txt

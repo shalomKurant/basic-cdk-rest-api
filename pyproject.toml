@@ -1,0 +1,70 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hipaa-users-apigateway"
+version = "1.0.0"
+requires-python = ">=3.9"
+dependencies = [
+    "constructs>=10.0.0,<11.0.0",
+    "fastapi",
+    "uvicorn",
+    "mangum",
+    "python-dotenv",
+    "pydantic~=1.10",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pip",
+    "pip-tools",
+    "pytest==6.2.5",
+    "aws-cdk.aws-lambda-python-alpha",
+    "aws-cdk-lib"
+]
+
+
+[tool.mypy]
+python_version = 3.9
+ignore_missing_imports = true
+no_implicit_optional = true
+strict_optional = false
+
+[tool.black]
+line-length = 140
+target-version = ['py37']
+include = '\.pyi?$'
+exclude = '''
+/(
+  \.toml
+  | \.sh
+  | \.git
+  | \.ini
+  | \.json
+  | Dockerfile
+  | Jenkinfile
+)/
+'''
+
+[tool.isort]
+line_length = 140
+profile = "black"
+skip = "__init__.py"
+
+[tool.pycln]
+all = true
+exclude = "__init__.py"
+
+[tool.pylint.'MASTER']
+jobs=4 #number of processes to use
+disable = [
+    "R0911", "C0114", "C0115", "C0116", "W1202", "W1203", "W0703", "R0903", "R0913", "W0702", "W0105", "E0401",
+    "C0301", "W0511", "R0914", "W0707", "R0902", "R0904", "C0302", "R0801", "C0113", "C0121", "R1729", "E0237", "W0201",
+    "W0102", "R0915", "C3001", "W1514", "R1735", "C2801", "W0602", "C0103"
+]
+good-names = ["ip", "e", "ex", "sn", "dn", "i", "setUp", "tearDown", "setUpClass", "tearDownClass", "T"]
+const-rgx = "(([a-z_][a-z0-9_]*)|(__.*__))$|(([A-Z_][A-Z0-9_]*)|(__.*__))$"
+extension-pkg-allow-list = ["orjson", "math"]
+fail-under = 8
+ignore-patterns = ["./venv/*", "./vendor/*", "./alembic/*", "./tests/*"]

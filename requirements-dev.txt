@@ -1,0 +1,118 @@
+anyio==4.2.0
+    # via starlette
+attrs==23.2.0
+    # via
+    #   cattrs
+    #   jsii
+    #   pytest
+aws-cdk-asset-awscli-v1==2.2.202
+    # via aws-cdk-lib
+aws-cdk-asset-kubectl-v20==2.1.2
+    # via aws-cdk-lib
+aws-cdk-asset-node-proxy-agent-v6==2.0.1
+    # via aws-cdk-lib
+aws-cdk-aws-lambda-python-alpha==2.124.0a0
+    # via hipaa-users-apigateway (../pyproject.toml)
+aws-cdk-lib==2.124.0
+    # via
+    #   aws-cdk-aws-lambda-python-alpha
+    #   hipaa-users-apigateway (../pyproject.toml)
+build==1.0.3
+    # via pip-tools
+cattrs==23.2.3
+    # via jsii
+click==8.1.7
+    # via
+    #   pip-tools
+    #   uvicorn
+constructs==10.3.0
+    # via
+    #   aws-cdk-aws-lambda-python-alpha
+    #   aws-cdk-lib
+    #   hipaa-users-apigateway (../pyproject.toml)
+fastapi==0.109.0
+    # via hipaa-users-apigateway (../pyproject.toml)
+h11==0.14.0
+    # via uvicorn
+idna==3.6
+    # via anyio
+importlib-resources==6.1.1
+    # via jsii
+iniconfig==2.0.0
+    # via pytest
+jsii==1.94.0
+    # via
+    #   aws-cdk-asset-awscli-v1
+    #   aws-cdk-asset-kubectl-v20
+    #   aws-cdk-asset-node-proxy-agent-v6
+    #   aws-cdk-aws-lambda-python-alpha
+    #   aws-cdk-lib
+    #   constructs
+mangum==0.17.0
+    # via hipaa-users-apigateway (../pyproject.toml)
+packaging==23.2
+    # via
+    #   build
+    #   pytest
+pip-tools==7.3.0
+    # via hipaa-users-apigateway (../pyproject.toml)
+pluggy==1.4.0
+    # via pytest
+publication==0.0.3
+    # via
+    #   aws-cdk-asset-awscli-v1
+    #   aws-cdk-asset-kubectl-v20
+    #   aws-cdk-asset-node-proxy-agent-v6
+    #   aws-cdk-aws-lambda-python-alpha
+    #   aws-cdk-lib
+    #   constructs
+    #   jsii
+py==1.11.0
+    # via pytest
+pydantic==1.10.14
+    # via
+    #   fastapi
+    #   hipaa-users-apigateway (../pyproject.toml)
+pyproject-hooks==1.0.0
+    # via build
+pytest==6.2.5
+    # via hipaa-users-apigateway (../pyproject.toml)
+python-dateutil==2.8.2
+    # via jsii
+python-dotenv==1.0.1
+    # via hipaa-users-apigateway (../pyproject.toml)
+six==1.16.0
+    # via python-dateutil
+sniffio==1.3.0
+    # via anyio
+starlette==0.35.1
+    # via fastapi
+toml==0.10.2
+    # via pytest
+typeguard==2.13.3
+    # via
+    #   aws-cdk-asset-awscli-v1
+    #   aws-cdk-asset-kubectl-v20
+    #   aws-cdk-asset-node-proxy-agent-v6
+    #   aws-cdk-aws-lambda-python-alpha
+    #   aws-cdk-lib
+    #   constructs
+    #   jsii
+typing-extensions==4.9.0
+    # via
+    #   fastapi
+    #   jsii
+    #   mangum
+    #   pydantic
+uvicorn==0.27.0
+    # via hipaa-users-apigateway (../pyproject.toml)
+wheel==0.42.0
+    # via pip-tools
+
+# The following packages are considered to be unsafe in a requirements file:
+pip==23.3.2
+    # via
+    #   hipaa-users-apigateway (../pyproject.toml)
+    #   pip-tools
+setuptools==69.0.3
+    # via pip-tools
